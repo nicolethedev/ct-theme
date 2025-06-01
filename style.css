@@ -1,0 +1,24 @@
+/*
+Theme Name: CT
+Theme URI: 
+Author: Nicole Logan | Hey Daisy Design
+Author URI: https://nicolelogan.dev
+Description: A custom theme built for conradtarasuk.ca
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.2
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ct
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
