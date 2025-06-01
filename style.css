@@ -22,3 +22,7 @@ Text Domain: ct
 html {
   scroll-behavior: smooth;
 }
+
+.ct-footer-text {
+  opacity: 50%;
+}
