@@ -23,6 +23,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.ct-footer-text {
-  opacity: 50%;
+footer {
+  margin: 0 0.625rem;
+}
+
+footer p {
+  opacity: 60%;
 }
