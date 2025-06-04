@@ -84,4 +84,8 @@ figure.hero-photo {
     display: flex;
     float: right;
   }
+
+  .wp-block-media-text__content p.about-bio {
+    padding-top: 5px !important;
+  }
 }
