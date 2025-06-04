@@ -30,3 +30,58 @@ footer {
 footer p {
   opacity: 60%;
 }
+
+figure.hero-photo {
+  width: 400px;
+  height: auto;
+  max-width: none;
+}
+
+.sidebar-desktop {
+  height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .wp-block-spacer {
+    display: none;
+  }
+
+  figure.hero-photo {
+    display: flex;
+    align-items: center;
+    /* padding-top: 10px; */
+  }
+
+  .hero-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar-desktop {
+    height: auto;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    display: flex;
+    float: left;
+    max-width: 100px;
+  }
+
+  .nav-mobile {
+    display: flex;
+    float: right;
+  }
+}
