@@ -32,9 +32,15 @@ footer p {
 }
 
 figure.hero-photo {
-  width: 400px;
+  width: 25%;
   height: auto;
   max-width: none;
+  margin: 20px;
+}
+
+.hero-text {
+  width: 75%;
+  height: auto;
 }
 
 .sidebar-desktop {
@@ -42,6 +48,16 @@ figure.hero-photo {
   overflow: auto;
   position: sticky;
   top: 0;
+}
+
+.about-photo {
+  width: 250px;
+  height: auto;
+}
+
+.about-text {
+  width: 50%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -52,14 +68,22 @@ figure.hero-photo {
   figure.hero-photo {
     display: flex;
     align-items: center;
-    /* padding-top: 10px; */
+    width: auto;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .hero-stack {
+  .hero-text {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-stack,
+  .about-stack {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: auto;
   }
 
   .sidebar-desktop {
@@ -83,9 +107,5 @@ figure.hero-photo {
   .nav-mobile {
     display: flex;
     float: right;
-  }
-
-  .wp-block-media-text__content p.about-bio {
-    padding-top: 5px !important;
   }
 }
