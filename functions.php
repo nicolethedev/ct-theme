@@ -21,10 +21,15 @@ function add_posthog_to_head() {
     posthog.init('phc_n8BGXEXnlsjVekPy1tB7vRuZPwnPEFJJs1Y8sDv7YER', {
         api_host: 'https://us.i.posthog.com',
         defaults: '2025-05-24',
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
-    })
-</script>
-    <!-- /PostHog -->
+        person_profiles: 'identified_only'
+    });
+    </script>
     <?php
+    /**
+     * This allows other devs/plugins/themes to hook into PostHog
+     * using do_action('posthog') to output additional JS/config.
+     */
+    do_action('posthog');
 }
 add_action('wp_head', 'add_posthog_to_head');
+
